@@ -1,0 +1,375 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:700|Roboto:400,500,700,900');
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+h1:after{
+	position: absolute;
+    color: #ddd8d866;
+    font-size: 75px;
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    font-weight: 800;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+
+}
+h1{
+	color: #40afcc;
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 70px;
+}
+h2{}
+h3{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: #33a9dc;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+h4{}
+h5{}
+h6{}
+p{
+	font-size: 14px;
+	padding-top: 1px;
+}
+
+
+/*Nav bar section css start*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:after{
+	content: "";
+	background-color: #40afcc8c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	z-index: -1;
+	transition: all 0.6s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover:after{
+	height: 8px;
+}
+.navbar-dark .navbar-nav .nav-link:before{
+	content: "";
+	background-color: #40afcc87;	
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0%;
+	width: 100%;
+	z-index: -1;
+	transition: all 0.4s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover:before{
+	height: 100%;
+}
+.navbar{
+	padding-top: 0 !important;
+}
+
+/*Nav bar section css end*/
+
+
+/*Header section css start*/
+header{
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+	z-index: 0;
+}
+/*Banner contant section css*/
+.banner-contant{
+	text-align: center;
+	margin-top: 150px;
+}
+.banner-contant h2{
+	font-size: 45px;
+	color: white;
+	font-weight: 100;
+}
+.banner-contant h2 strong{
+	color: #40afcc;
+	font-weight: 600;
+}
+.banner-contant p{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 100;
+	max-width: 550px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+
+
+
+/*Button section css */
+.banner-contant .nav{
+	justify-content: center;
+}
+.banner-contant .nav li{
+	padding: 5px;
+}
+.btn-custom{
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 20px;
+	border: 1px solid #40afcc;
+	transition: all 0.6s ease;	
+	position: relative;
+}
+.radious-left{
+	border-bottom-left-radius: 15px;
+}
+.radious-right{
+	border-bottom-right-radius: 15px;
+}
+.btn-custom:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #40afcc;
+	width: 100%;
+	height:0;
+	z-index: -1;
+	transition: all 0.4s ease;	
+}
+.btn-custom.radious-right:before{
+	border-bottom-right-radius: 10px;
+}
+.btn-custom.radious-left:before{
+	border-bottom-left-radius: 10px;
+}
+.btn-custom:hover:before{
+	height:100%;
+}
+.banner-contant .nav li a:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #40afcc;
+}
+
+
+
+/*Social icon css*/
+.social-icon{
+	position: absolute;
+	top: 40%;
+	right: 70px;
+}
+.social-icon li{
+	color: #fff;
+}
+.social-icon li a{
+	color: #40afcc;
+	background-color: #fff;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	text-align: center;
+	display: block;
+	font-size: 12px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 2;
+}
+.social-icon li a:hover{
+	color: #fff;
+	background-color:#40afcc; 
+}
+.social-icon li span{
+	transform: rotate(-90deg);
+	position: absolute;
+	height: auto;
+	width: 190px;
+	right: -86px;
+	bottom: 0;
+}
+
+/*Header section css end*/
+
+
+/*About me section css start*/
+.about-me{
+	padding-top: 100px;
+}
+.about-me-img{}
+.about-me-img img{}
+.about-me-contant{}
+.about-me-contant h1{
+
+}
+
+.about-me-contant h1:after{
+	content: "well come";
+}
+
+.about-me-contant p{}
+
+
+
+
+
+
+/*About me section css end*/
+
+/*Skill section css start*/
+.skill-section{
+	padding-top: 100px;
+}
+.skill-section h1:after{
+	content: "my experiance area"
+}
+
+
+/*Font end skill css*/
+.font-end-skill{
+	position: relative;
+}
+.font-end-skill:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0;
+	background: #1b1b1b82;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transition: all 0.4s ease;
+	opacity: 0;
+}
+.font-end-skill img{}
+.font-end-skill p{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 1;
+	width: 100%;
+	opacity: 0;
+}
+.font-end-skill:hover:after{
+	height: 100%;
+	opacity:1;
+}
+.font-end-skill:hover p{
+	opacity: 1;
+}
+/*back end skill css*/
+.back-end{
+	padding-top: 70px;
+}
+.back-end-skill{
+	position: relative;
+}
+.back-end-skill:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0;
+	background: #f5d62ea6;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transition: all 0.4s ease;
+	opacity: 0;
+}
+.back-end-skill p{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	color: #0b0a0a;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 1;
+	width: 100%;
+	opacity: 0;
+}
+.back-end-skill:hover:after{
+	height: 100%;
+	opacity:1;
+}
+.back-end-skill:hover p{
+	opacity: 1;
+}
+/*Digital marketing css start*/
+
+.digital-market{
+	padding-top: 70px
+}
+.digital-marketing-skill{
+	position: relative;
+}
+.digital-marketing-skill:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0;
+	background: #1a1918a6;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transition: all 0.4s ease;
+	opacity: 0;
+}
+
+.digital-marketing-skill p{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	color: #fbf7f7;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 1;
+	width: 100%;
+	opacity: 0;
+}
+
+.digital-marketing-skill:hover:after{
+	height: 100%;
+	opacity:1;
+}
+.digital-marketing-skill:hover p{
+	opacity: 1;
+}
+
+
+/*Skill section css end*/
+
+
+
